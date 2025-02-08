@@ -4,6 +4,24 @@ Welcome to our cutting-edge web application! This project leverages modern full-
 
 ---
 
+## How to run the code
+1. Clone the repository:
+2. Install dependencies:
+```pnpm install (recommended) or yarn install or npm install```
+
+3. create .env file and add the following variables:
+```
+API_URL=https://api.themoviedb.org/3
+API_KEY=<your-api-key>
+NEXT_PUBLIC_BASE_URL=http://localhost:3000
+NEXT_PUBLIC_IMAGE_URL=https://image.tmdb.org
+```
+
+4. Start the development server:
+```pnpm dev or yarn dev or npm run dev```
+
+---
+
 ## Architecture & System Design
 
 For a deep dive into the overall architecture, please refer to our [Architecture Wiki](https://github.com/ryusuf11/disney-clone/wiki/System-Design).
@@ -154,6 +172,23 @@ Below is a detailed overview of the main libraries and tools used in this projec
   Facilitates collaboration on large projects with clear type contracts.
 - **Improved Code Quality:**  
   Reduces runtime errors by enforcing type safety and consistency across the code.
+
+
+### pnpm
+
+**Main Features:**
+- **Efficient Disk Space Usage:**  
+  Uses a content-addressable storage mechanism to store packages globally and creates symlinks in your projects, reducing duplication and saving disk space.
+- **Fast Installations:**  
+  Leverages a global cache and optimized dependency resolution to significantly speed up package installations.
+- **Strict Dependency Isolation:**  
+  Enforces exact version matching and prevents phantom dependency issues by isolating each package, ensuring a predictable dependency tree.
+- **Consistency and Determinism:**  
+  With a dedicated lockfile and deterministic symlink structure, pnpm guarantees that every developer and CI/CD pipeline uses the same dependency versions.
+- **Monorepo-Friendly:**  
+  Provides powerful workspace features that simplify managing shared dependencies across multiple projects within a monorepo.
+- **Enhanced Security:**  
+  Minimizes risks by reducing unintended dependency hoisting and enforcing strict module resolution.
 
 ---
 

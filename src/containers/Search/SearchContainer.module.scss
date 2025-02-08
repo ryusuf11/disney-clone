@@ -1,0 +1,30 @@
+.searchContainer {
+  padding: 2rem;
+}
+
+.sectionContainer {
+  margin-top: 16px;
+  margin-bottom: 12px;
+}
+
+.cardContainer {
+  position: relative;
+  width: 100%;
+  padding-left: 10px;
+  margin: auto;
+  height: 220px;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  overflow-x: auto;
+  overflow-y: visible;
+  scroll-behavior: smooth;
+
+  &::-webkit-scrollbar-track {
+    background-color: #0c111b;
+  }
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

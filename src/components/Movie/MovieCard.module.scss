@@ -1,0 +1,115 @@
+$card-width: 150px;
+$card-height: 200px;
+$hover-scale: 1.1;
+$transition-duration: 0.3s;
+
+.movieCard {
+  position: relative;
+  min-width: $card-width;
+  height: $card-height;
+  width: $card-width;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #030b17;
+  margin-right: 10px;
+  transition: 0.5s;
+
+  &:hover {
+    cursor: pointer;
+    transform: scale($hover-scale);
+
+    .movieCard__content {
+      opacity: 1;
+    }
+
+    .movieCard__checkbox {
+      display: block;
+    }
+  }
+
+  &__poster {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform $transition-duration ease;
+  }
+
+  &__content {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background: linear-gradient(to bottom, rgba(4, 8, 15, 0), #192133 90%);
+    padding: 10px;
+    transition: 0.5s;
+  }
+
+  &__title {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-top: 60%;
+    display: -webkit-box;
+    line-clamp: 1;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  &__description {
+    color: #fff;
+    opacity: 0.8;
+    margin: 5px 0;
+    font-weight: 500;
+    font-size: 12px;
+    display: -webkit-box;
+    line-clamp: 3;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    height: 40px;
+  }
+
+  &__watchlist {
+    position: relative;
+    width: 100%;
+    text-transform: capitalize;
+    background: none;
+    border: none;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.5);
+    margin: 4px 0;
+    cursor: pointer;
+    padding: 8px 4px;
+    border-radius: 4px;
+    display: flex;
+    gap: 4px;
+    align-items: center;
+
+    span {
+      width: 100%;
+    }
+
+    &:hover {
+      color: #fff;
+      background: rgba(255, 255, 255, 0.1);
+    }
+  }
+
+  &__checkbox {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    width: 24px;
+    z-index: 10;
+    display: none;
+  }
+}
+
+.selected {
+  display: block;
+}

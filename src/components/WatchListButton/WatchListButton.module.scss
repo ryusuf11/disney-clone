@@ -1,0 +1,44 @@
+.button {
+  position: relative;
+  width: 100%;
+  text-transform: capitalize;
+  background: none;
+  border: none;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 4px 0;
+  cursor: pointer;
+  padding: 8px 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+
+  span {
+    width: 100%;
+  }
+
+  &:hover {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  &--lg {
+    font-size: 18px;
+    padding: 8px 4px;
+    gap: 8px;
+    border-radius: 8px;
+  }
+
+  &--sm {
+    font-size: 12px;
+    padding: 4px 2px;
+    gap: 2px;
+    border-radius: 4px;
+  }
+
+  &--active {
+    background-color: rgb(208, 10, 10) !important;
+    color: white;
+  }
+}

@@ -47,17 +47,17 @@ export default function RootLayout({
 					</Link>
 					<div className="sidebar__menu">
 						<Link href="/search" title="Search" className="sidebar__menu-item">
-							<Search />
+							<Search size={24} />
 						</Link>
 						<Link href="/" title="Home" className="sidebar__menu-item">
-							<Home />
+							<Home size={24} />
 						</Link>
 						<Link
 							href="/watchlist"
 							title="Watchlist"
 							className="sidebar__menu-item"
 						>
-							<Monitor />
+							<Monitor size={24} />
 						</Link>
 					</div>
 				</aside>

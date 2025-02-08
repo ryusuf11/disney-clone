@@ -59,7 +59,7 @@ const SearchInput = ({
 			<div className={styles.searchWrapper}>
 				{showIcon && (
 					<span className={styles.searchIcon} aria-hidden="true">
-						<Search />
+						<Search size={24} />
 					</span>
 				)}
 				<input
@@ -78,7 +78,7 @@ const SearchInput = ({
 						aria-label="Clear search"
 						onClick={clearSearch}
 					>
-						<X />
+						<X size={24} />
 					</button>
 				) : (
 					<button

@@ -75,7 +75,6 @@ const Carousel: React.FC<CarouselProps> = ({ slides }) => {
 								quality={50}
 								width={1280}
 								height={600}
-								loading="lazy"
 							/>
 							<div className={style["slide-content"]}>
 								<h3 className={style["slide-title"]}>{getTitle(slide)}</h3>
@@ -106,6 +105,7 @@ const Carousel: React.FC<CarouselProps> = ({ slides }) => {
 				type="button"
 				className={`${style["slider-button"]} ${style.prev}`}
 				onClick={handlePrev}
+				aria-label="Previous Slide"
 			>
 				<ArrowLeft />
 			</button>
@@ -113,6 +113,7 @@ const Carousel: React.FC<CarouselProps> = ({ slides }) => {
 				type="button"
 				className={`${style["slider-button"]} ${style.next}`}
 				onClick={handleNext}
+				aria-label="Next Slide"
 			>
 				<ArrowRight />
 			</button>

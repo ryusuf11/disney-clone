@@ -62,7 +62,7 @@ export default function RootLayout({
 					</div>
 				</aside>
 
-				<main className="main">{children}</main>
+				<main className="main main__sidebar">{children}</main>
 			</body>
 		</html>
 	);

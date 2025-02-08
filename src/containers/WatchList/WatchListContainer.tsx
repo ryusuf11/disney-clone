@@ -1,7 +1,7 @@
 "use client";
 
 import EmptyItem from "@/components/EmptyItem";
-import style from "./WatchList.module.scss";
+import style from "./WatchListContainer.module.scss";
 import { MovieCard } from "@/components/Movie/MovieCard";
 import type { CardType } from "@/modules/shared/shared.type";
 import { actionWatchList } from "@/modules/watchlist/watchlist.action";

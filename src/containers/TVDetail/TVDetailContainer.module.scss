@@ -39,6 +39,7 @@
   max-width: 600px;
   font-size: 14px;
   gap: 8px;
+  flex-wrap: wrap;
 }
 
 .cardContainer {
@@ -60,5 +61,19 @@
 
   &::-webkit-scrollbar {
     display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .heroBanner {
+    .backdrop {
+      &__content {
+        right: 5%;
+
+        p {
+          width: 100%;
+        }
+      }
+    }
   }
 }

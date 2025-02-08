@@ -115,3 +115,13 @@ $border-width: 3px;
     transform: translateY(0);
   }
 }
+
+@media screen and (max-width: 768px) {
+  .tabContainer {
+    margin: 0 8px;
+  }
+
+  .tabContentContainer {
+    padding: 0 8px;
+  }
+}

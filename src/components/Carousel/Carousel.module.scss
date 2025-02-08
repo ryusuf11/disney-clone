@@ -92,7 +92,7 @@ $easing: cubic-bezier(0.455, 0.03, 0.515, 0.955);
 
         &:hover {
           color: #fff;
-          background: rgba(255, 255, 255, 0.1);
+          background: rgba(255, 255, 255, 0.3);
         }
       }
     }
@@ -146,5 +146,44 @@ $easing: cubic-bezier(0.455, 0.03, 0.515, 0.955);
 
   to {
     transform: translateX(100%);
+  }
+}
+
+@media (max-width: 768px) {
+  .slider-container {
+    height: 200px;
+
+    .slide {
+      .slide-title {
+        font-size: 1.5rem;
+      }
+
+      .slide-description {
+        font-size: 12px;
+        display: -webkit-box;
+        line-clamp: 3;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        max-width: 300px;
+      }
+
+      .slide-action {
+        .slide-link {
+          min-width: auto;
+          height: 40px;
+        }
+
+        button {
+          font-size: 14px;
+          color: white;
+          top: 60%;
+        }
+      }
+    }
+
+    .slider-button {
+      display: none;
+    }
   }
 }

@@ -44,13 +44,15 @@ export const WatchlistButton = ({
 	const ButtonIcon = inList ? MinusIcon : PlusIcon;
 
 	return (
-		<button
-			type="button"
-			className={`button button--${size} ${inList ? "button--active" : ""}`}
-			onClick={toggleWatchlist}
-		>
-			<ButtonIcon size={size === "lg" ? 24 : 16} />
-			<span>{inList ? "Remove" : "Add to"} Watchlist</span>
-		</button>
+		<div>
+			<button
+				type="button"
+				className={`button button--${size} ${inList ? "button--active" : ""}`}
+				onClick={toggleWatchlist}
+			>
+				<ButtonIcon size={size === "lg" ? 24 : 16} />
+				<span>{inList ? "Remove" : "Add to"} Watchlist</span>
+			</button>
+		</div>
 	);
 };

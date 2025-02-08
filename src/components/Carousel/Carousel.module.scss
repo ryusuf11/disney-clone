@@ -172,12 +172,12 @@ $easing: cubic-bezier(0.455, 0.03, 0.515, 0.955);
         .slide-link {
           min-width: auto;
           height: 40px;
+          margin-top: 40px;
         }
 
         button {
           font-size: 14px;
           color: white;
-          top: 60%;
         }
       }
     }

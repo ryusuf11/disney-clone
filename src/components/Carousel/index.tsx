@@ -90,10 +90,12 @@ const Carousel: React.FC<CarouselProps> = ({ slides }) => {
 									title={getTitle(slide)}
 									className={style["slide-link"]}
 								>
-									<button type="button">
-										<InfoIcon size={24} />
-										See Detail
-									</button>
+									<div>
+										<button type="button">
+											<InfoIcon size={24} />
+											See Detail
+										</button>
+									</div>
 								</Link>
 							</div>
 						</div>

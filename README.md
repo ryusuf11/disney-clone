@@ -6,6 +6,9 @@ Welcome to our cutting-edge web application! This project leverages modern full-
 
 [Demo On Vercel](https://disney-clone-kohl-five.vercel.app/)
 
+<img width="637" alt="image" src="https://github.com/user-attachments/assets/f5f60656-e42a-4bf9-b4e6-5230e1b3a095" />
+
+
 ---
 
 ## How to run the code
